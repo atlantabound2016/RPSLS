@@ -21,7 +21,7 @@ class Player implements PlayerInterface
     /**
      * @var int
      */
-    private static $nextPlayerID = 1;
+    private static $playerCount = 0;
     /**
      * @var int
      */
@@ -56,8 +56,8 @@ class Player implements PlayerInterface
      */
     public static function create($name)
     {
-        // return Player instance and increment $nextPlayerID
-        return new self(self::$nextPlayerID++, $name);
+        // increment $playerCount and return instance
+        return new self(++self::$playerCount, $name);
     }
 
     /**
@@ -84,6 +84,6 @@ class Player implements PlayerInterface
      */
     public function getPlayerCount()
     {
-        return self::$nextPlayerID - 1;
+        return self::$playerCount;
     }
 }
