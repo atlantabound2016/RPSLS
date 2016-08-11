@@ -1,0 +1,12 @@
+{
+  "name": "atlantabound2016/rpsls",
+  "description": "Rock, Paper, Scissors, Lizard, Spock",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Jason Swint",
+      "email": "jason@adventuresinphp.com"
+    }
+  ],
+  "require": {}
+}
