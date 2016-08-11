@@ -43,6 +43,9 @@ class Player implements PlayerInterface
             throw new PlayerException('ID must be integer.');
         } elseif (!is_string($name)) {
             throw new PlayerException('Name must be string.');
+        } else {
+            $this->id = $id;
+            $this->name = $name;
         }
     }
 
